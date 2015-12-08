@@ -9,7 +9,7 @@ import com.gmail.ivanytskyy.vitaliy.dao.DAOException;
 import com.gmail.ivanytskyy.vitaliy.domain.Group;
 import com.gmail.ivanytskyy.vitaliy.domain.Student;
 /*
- * Task #2/2015/11/29 (pet web project #1)
+ * Task #1/2015/11/29 (pet web project #1)
  * StudentServlet
  * @version 1.01 2015.11.29
  * @author Vitaliy Ivanytskyy

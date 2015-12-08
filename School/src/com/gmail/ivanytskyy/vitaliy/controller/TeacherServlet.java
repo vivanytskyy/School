@@ -8,7 +8,7 @@ import org.apache.log4j.Logger;
 import com.gmail.ivanytskyy.vitaliy.dao.DAOException;
 import com.gmail.ivanytskyy.vitaliy.domain.Teacher;
 /*
- * Task #2/2015/11/29 (pet web project #1)
+ * Task #1/2015/11/29 (pet web project #1)
  * TeacherServlet
  * @version 1.01 2015.11.29
  * @author Vitaliy Ivanytskyy

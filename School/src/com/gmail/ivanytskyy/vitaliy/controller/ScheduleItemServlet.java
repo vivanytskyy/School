@@ -14,7 +14,7 @@ import com.gmail.ivanytskyy.vitaliy.domain.ScheduleItem;
 import com.gmail.ivanytskyy.vitaliy.domain.Subject;
 import org.apache.log4j.Logger;
 /*
- * Task #2/2015/11/29 (pet web project #1)
+ * Task #1/2015/11/29 (pet web project #1)
  * ScheduleItemServlet
  * @version 1.01 2015.11.29
  * @author Vitaliy Ivanytskyy

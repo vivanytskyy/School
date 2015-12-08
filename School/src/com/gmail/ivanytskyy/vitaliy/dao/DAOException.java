@@ -1,6 +1,6 @@
 package com.gmail.ivanytskyy.vitaliy.dao;
 /*
- * Task #2/2015/11/29 (pet web project #1)
+ * Task #1/2015/11/29 (pet web project #1)
  * DAOException class
  * @version 1.01 2015.11.29
  * @author Vitaliy Ivanytskyy

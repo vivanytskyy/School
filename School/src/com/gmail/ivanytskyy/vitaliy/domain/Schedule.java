@@ -12,7 +12,7 @@ import com.gmail.ivanytskyy.vitaliy.dao.LessonIntervalDao;
 import com.gmail.ivanytskyy.vitaliy.dao.ScheduleItemDao;
 import com.gmail.ivanytskyy.vitaliy.dao.SubjectDao;
 /*
- * Task #2/2015/11/29 (pet web project #1)
+ * Task #1/2015/11/29 (pet web project #1)
  * Schedule class
  * @version 1.01 2015.11.29
  * @author Vitaliy Ivanytskyy
@@ -63,7 +63,7 @@ public class Schedule {
 	/**
 	 * addScheduleItem method
 	 * @param group is Group object
-	 * @param teacher is Lecturer object
+	 * @param teacher is Teacher object
 	 * @param classroom is Classroom object
 	 * @param subject is Subject object
 	 * @param lessonInterval is LessonInterval object
@@ -137,13 +137,13 @@ public class Schedule {
 					throw new DAOException("Cannot get subject", e);
 				}
 				try {
-					log.trace("Get name of lecturer");
+					log.trace("Get name of teacher");
 					scheduleItemAsStringList.add(new TeacherDao().
 							getTeacherById(scheduleItem.getTeacherId()).getTeacherName());
-					log.trace("Name of lecturer was added");
+					log.trace("Name of teacher was added");
 				} catch (DAOException e) {
-					log.error("Cannot get lecturer", e);
-					throw new DAOException("Cannot get lecturer", e);
+					log.error("Cannot get teacher", e);
+					throw new DAOException("Cannot get teacher", e);
 				}
 				try {
 					log.trace("Get name of classroom");
@@ -218,13 +218,13 @@ public class Schedule {
 					throw new DAOException("Cannot get subject", e);
 				}
 				try {
-					log.trace("Get name of lecturer");
+					log.trace("Get name of teacher");
 					scheduleItemAsStringList.add(new TeacherDao().
 							getTeacherById(scheduleItem.getTeacherId()).getTeacherName());
-					log.trace("Name of lecturer was added");
+					log.trace("Name of teacher was added");
 				} catch (DAOException e) {
-					log.error("Cannot get lecturer", e);
-					throw new DAOException("Cannot get lecturer", e);
+					log.error("Cannot get teacher", e);
+					throw new DAOException("Cannot get teacher", e);
 				}				
 				try {
 					log.trace("Get start and finish of lesson interval");
@@ -246,11 +246,11 @@ public class Schedule {
 	}
 	/**
 	 * obtainScheduleItemsAsStringList method
-	 * @param lecturer is Lecturer object
+	 * @param teacher is Teacher object
 	 * @return result as List<String> type variable
 	 */
-	public List<String> obtainScheduleItemsAsStringList(Teacher lecturer) throws DAOException{
-		log.info("Obtaining scheduleItems as string list for lecturer with lecturerId = " + lecturer.getTeacherId());
+	public List<String> obtainScheduleItemsAsStringList(Teacher teacher) throws DAOException{
+		log.info("Obtaining scheduleItems as string list for teacher with teacherId = " + teacher.getTeacherId());
 		List<String> scheduleItemAsStringList  = new LinkedList<String>();
 		try {
 			scheduleItems = this.getScheduleItems();
@@ -260,16 +260,16 @@ public class Schedule {
 		}
 		for (ScheduleItem scheduleItem : scheduleItems) {
 			log.trace("Found scheduleItem with id = " + scheduleItem.getScheduleItemId());
-			if(scheduleItem.getTeacherId() == lecturer.getTeacherId()){
+			if(scheduleItem.getTeacherId() == teacher.getTeacherId()){
 				scheduleItemAsStringList.add(dateToString(scheduleDate));
 				try {
-					log.trace("Get name of lecturer");
+					log.trace("Get name of teacher");
 					scheduleItemAsStringList.add(new TeacherDao().
 							getTeacherById(scheduleItem.getTeacherId()).getTeacherName());
-					log.trace("Name of lecturer was added");
+					log.trace("Name of teacher was added");
 				} catch (DAOException e) {
-					log.error("Cannot get lecturer", e);
-					throw new DAOException("Cannot get lecturer", e);
+					log.error("Cannot get teacher", e);
+					throw new DAOException("Cannot get teacher", e);
 				}
 				try {
 					log.trace("Get name of group");

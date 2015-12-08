@@ -13,7 +13,7 @@ import org.apache.log4j.Logger;
 import com.gmail.ivanytskyy.vitaliy.dao.connection.DaoConnection;
 import com.gmail.ivanytskyy.vitaliy.domain.Schedule;
 /*
- * Task #2/2015/11/29 (pet web project #1)
+ * Task #1/2015/11/29 (pet web project #1)
  * ScheduleDao class
  * @version 1.01 2015.11.29
  * @author Vitaliy Ivanytskyy

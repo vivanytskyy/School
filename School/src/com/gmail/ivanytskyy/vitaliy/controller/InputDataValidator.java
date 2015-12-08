@@ -2,7 +2,7 @@ package com.gmail.ivanytskyy.vitaliy.controller;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 /*
- * Task #2/2015/11/29 (pet web project #1)
+ * Task #1/2015/11/29 (pet web project #1)
  * InputDataValidator
  * @version 1.01 2015.11.29
  * @author Vitaliy Ivanytskyy
